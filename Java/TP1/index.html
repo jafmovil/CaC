@@ -132,21 +132,33 @@
                     </div>
                 </div>
     
-                <div class="col-md-6 bg-dark mx-n2">
+                <div class="col-md-6 bg-custom mx-n2">
                     <div class="card-body">
-                        <h5 class="card-title text-white">BsAs - Octubre</h5>
-                        <p class="card-text text-white">Buenos Aires es la provincia y localidad más grande del estado
-                            de Argentina, en los Estados Unidos. Honolulu es la más sureña de las principales ciudades
-                            estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste
-                            de la isla de Oahu, la ciudad y el condado de Honolulú han formado una ciudad-condado
-                            consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
+                        <h5 class="card-title text-white" style="margin-bottom: 10px; margin-top: 10px; font-size: 40px">BsAs - Octubre</h5>
+                        <p class="card-text text-white">
+                            Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la<br>
+                            más sureña de las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área<br>
+                            urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulú han formado una ciudad-<br>
+                            condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p> 
                         <p class="card-text"><small class="text-muted"></small></p>
-                        <button class="btn btn-primary bg-dark btn-outline-light">Conocé más</button>
+                        <button class="btn btn-primary bg-custom-button btn-outline-light">Conocé más</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <style>
+        .bg-custom {
+            background-color: #313131; 
+        }
+    
+        .bg-custom-button {
+            background-color: #313131; 
+        }
+    </style>
+    
+    
     
     
     
@@ -155,64 +167,72 @@
     <!--Conviertete en un orador-->
 
     <div class="text-center my-5">
-        <h3><small style="font-size: 0.5em;">CONVIÉRTETE EN UN</small> <br> <strong>ORADOR</strong></h3>
-        <h4><small style="font-size: 0.6em;">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres
-                hablar!</small></h4>
+        <h3><small style="font-size: 20px;">CONVIÉRTETE EN UN</small> <br> <strong style="font-size: 50px;">ORADOR</strong></h3>
+        <h4><small style="font-size: 20px;">Anótate como orador para dar una <a href="url-del-enlace">charla ignite</a>. Cuéntanos de qué quieres hablar!</small></h4>
     </div>
-
+    
     <style>
         #exampleInputSobreQueQuieresHablar {
             width: 100%;
             box-sizing: border-box;
         }
-
+    
         #submitButton {
-            width: auto;
+            width: 100%;
             display: inline-block;
+            background-color: #81d188;
+        }
+    
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
-
-    <form class="text-center">
-        <div class="row mb-3">
-            <div class="col-6">
-                <input type="text" class="form-control" id="exampleInputName" placeholder="Nombre">
+    
+    <div class="form-container">
+        <form class="text-center">
+            <div class="row mb-3">
+                <div class="col-6">
+                    <input type="text" class="form-control" id="exampleInputName" placeholder="Nombre">
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" id="exampleInputApellido" placeholder="Apellido">
+                </div>
             </div>
-            <div class="col-6">
-                <input type="text" class="form-control" id="exampleInputApellido" placeholder="Apellido">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <textarea class="form-control" id="exampleInputSobreQueQuieresHablar" rows="3"
+                        placeholder="Sobre qué quieres hablar?"></textarea>
+                </div>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-12">
-                <textarea class="form-control" id="exampleInputSobreQueQuieresHablar" rows="3"
-                    placeholder="Sobre qué quieres hablar?"></textarea>
+            <p style="text-align: left;">Recuerda incluir un título para tu charla</p>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <input type="submit" id="submitButton" class="btn btn-success" value="Enviar">
+                </div>
             </div>
-        </div>
-        <p style="text-align: left;">Recuerda incluir un título para tu charla</p>
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <input type="submit" id="submitButton" class="btn btn-success" value="Enviar">
-            </div>
-        </div>
-    </form>
-
+        </form>
+    </div>
+    
     <script>
-        // Ajustar el ancho del botón al ancho del input al cargar la página
+        // Ajustar el ancho del botón al cargar la página
         window.addEventListener('DOMContentLoaded', function () {
             var inputWidth = document.getElementById('exampleInputSobreQueQuieresHablar').clientWidth;
             document.getElementById('submitButton').style.width = inputWidth + 'px';
         });
-
+    
         // Ajustar el ancho del botón cuando el tamaño de la ventana cambia
         window.addEventListener('resize', function () {
             var inputWidth = document.getElementById('exampleInputSobreQueQuieresHablar').clientWidth;
             document.getElementById('submitButton').style.width = inputWidth + 'px';
         });
     </script>
+    
+    
 
-    <section>
-
-    </section>
-
+    
+<!--footer-->
     <footer>
         <div id="footer" class=>
             <div class="conteiner pt-5">
